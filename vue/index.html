@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js tree view example</title>
+<script src="../../dist/vue.min.js"></script>
+  </head>
+  <body>
+<script type="text/x-template" id="template-member">
+  <div>
+    <div class="name">{{member.name}}</div>
+    <div class="age" v-html="age"></div>
+  </div>
+</script>
+<h2>v-for</h2>
+<div id="app">
+  <div v-for="member in members">
+    <div class="name">{{ member.name }}</div>
+  </div>
+<h2>public component using template</h2>
+<blog-post
+  v-for="post in posts"
+  v-bind:key="post.id"
+  v-bind:title="post.title"
+></blog-post>
+<h2>public component using x-template</h2>
+<compo-member
+  v-for="member in members"
+  v-bind:member="member"
+></compo-member>
+<h2>private component</h2>
+<menber-tag
+  v-for="member in members"
+  v-bind:member="member"
+></menber-tag>
+</div>
+<script src="app.js"></script>
+  </body>
+</html>
