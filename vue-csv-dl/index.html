@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div id="app">
+<button v-on:click="downloadCSV">
+  Download
+</button>
+<table border=1>
+  <tr>
+    <th v-for="(value, key, index) in columns">{{ value }}</th>
+  </tr>
+  <tr v-for="item in items">
+    <td v-for="(value, key, index) in columns">{{ item[key] }}</td>
+  </tr>
+</table>
+</div>
+
+<script type="text/javascript">
+var columns = {
+    name: '品名',
+    price: '価格'
+}
+
+var items = [
+      { name: 'りんご', price: '100' },
+      { name: 'みかん', price: '50' },
+      { name: 'マンゴー', price: '3000' }
+]
+</script>
+<script src="vue.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
