@@ -1,0 +1,48 @@
+aws_vpc : vpc
+aws_subnet : sn
+aws_vpn_gateway : vgw
+aws_security_group : sg
+aws_cloudwatch_metric_alarm : cwa
+
+aws_s3_bucket : s3
+aws_instance : ec2
+
+aws_iam_policy : iamp
+aws_iam_policy_attachment : iampa
+aws_iam_role : iamr
+aws_iam_role_policy : iamrp
+aws_iam_group : iamg
+aws_iam_group_membership : iamgm
+aws_iam_group_policy : iamgp
+aws_iam_user : iamu
+aws_iam_user_policy : iamup
+aws_iam_instance_profile : iamip
+
+aws_internet_gateway : igw
+aws_nat_gateway : nat
+aws_network_acl : nacl
+aws_network_interface : nif
+aws_eip : eip : elastic ip
+
+aws_route53_zone : r53z
+aws_route53_record : r53r
+aws_route_table : rt
+aws_route_table_association : rta
+
+aws_elb : elb : elastic load balancing
+aws_alb : alb : application load balancer
+
+aws_db_instance : rds : relation database
+aws_db_parameter_group : dbpg
+aws_db_subnet_group : dbsn
+aws_redshift_cluster : rs
+
+aws_kms_key : kmsk
+
+aws_elasticache_cluster : ecc
+aws_elasticache_subnet_group : ecsn
+
+aws_sns_topic : snst
+aws_sns_topic_subscription : snss
+aws_sqs_queue : sqs
+
